@@ -1,15 +1,21 @@
-export function routerConfig($componentLoaderProvider) {
-  'ngInject';
-  $componentLoaderProvider.setTemplateMapping(function(name) {
-    return `app/${ name }/${ name }.html`;
-  });
-}
+(function() {
+  'use strict';
 
-export class RouterController {
-  constructor($router) {
-    'ngInject';
-    $router.config([
-      { path: '/', component: 'main' }
-    ]);
+  angular
+    .module('app')
+    .config(routerConfig);
+
+  /** @ngInject */
+  function routerConfig($stateProvider, $urlRouterProvider) {
+    $stateProvider
+      .state('home', {
+        url: '/',
+        templateUrl: 'app/main/main.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      });
+
+    $urlRouterProvider.otherwise('/');
   }
-}
+
+})();

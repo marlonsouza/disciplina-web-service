@@ -1,39 +1,50 @@
-/**
- * @todo Complete the test
- * This example is not perfect.
- * Test should check if MomentJS have been called
- */
-describe('directive navbar', function() {
-  let vm;
-  let element;
-  let timeInMs;
+(function() {
+  'use strict';
 
-  beforeEach(angular.mock.module('app'));
+  /**
+   * @todo Complete the test
+   * This example is not perfect.
+   * Test should check if MomentJS have been called
+   */
+  describe('directive navbar', function() {
+    // var $window;
+    var vm;
+    var el;
+    var timeInMs;
 
-  beforeEach(inject(($compile, $rootScope) => {
-    const currentDate = new Date();
-    timeInMs = currentDate.setHours(currentDate.getHours() - 24);
+    beforeEach(module('app'));
+    beforeEach(inject(function($compile, $rootScope) {
+      // spyOn(_$window_, 'moment').and.callThrough();
+      // $window = _$window_;
 
-    element = angular.element(`
-      <acme-navbar creation-date="${timeInMs}"></acme-navbar>
-    `);
+      timeInMs = new Date();
+      timeInMs = timeInMs.setHours(timeInMs.getHours() - 24);
 
-    $compile(element)($rootScope.$new());
-    $rootScope.$digest();
-    vm = element.isolateScope().vm;
-  }));
+      el = angular.element('<acme-navbar creation-date="' + timeInMs + '"></acme-navbar>');
 
-  it('should be compiled', () => {
-    expect(element.html()).not.toEqual(null);
+      $compile(el)($rootScope.$new());
+      $rootScope.$digest();
+      vm = el.isolateScope().vm;
+      // ctrl = el.controller('acmeNavbar');
+    }));
+
+    it('should be compiled', function() {
+      expect(el.html()).not.toEqual(null);
+    });
+
+    it('should have isolate scope object with instanciate members', function() {
+      expect(vm).toEqual(jasmine.any(Object));
+
+      expect(vm.creationDate).toEqual(jasmine.any(Number));
+      expect(vm.creationDate).toEqual(timeInMs);
+
+      expect(vm.relativeDate).toEqual(jasmine.any(String));
+      expect(vm.relativeDate).toEqual('a day ago');
+    });
+
+    // it('should call Moment', function() {
+    //   console.log($window.moment)
+    //   expect($window.moment).toHaveBeenCalled();
+    // });
   });
-
-  it('should have isolate scope object with instanciate members', () => {
-    expect(vm).toEqual(jasmine.any(Object));
-
-    expect(vm.creationDate).toEqual(jasmine.any(Number));
-    expect(vm.creationDate).toEqual(timeInMs);
-
-    expect(vm.relativeDate).toEqual(jasmine.any(String));
-    expect(vm.relativeDate).toEqual('a day ago');
-  });
-});
+})();

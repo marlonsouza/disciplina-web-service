@@ -33,12 +33,12 @@
         "key": "jquery2"
       },
       "resource": {
-        "key": "restangular",
-        "module": "restangular"
+        "key": "angular-resource",
+        "module": "ngResource"
       },
       "router": {
-        "key": "new-router",
-        "module": "ngNewRouter"
+        "key": "ui-router",
+        "module": "ui.router"
       },
       "ui": {
         "key": "bootstrap",
@@ -53,9 +53,9 @@
         "extension": "scss"
       },
       "jsPreprocessor": {
-        "key": "babel",
+        "key": "noJsPrepro",
         "extension": "js",
-        "srcExtension": "es6"
+        "srcExtension": "js"
       },
       "htmlPreprocessor": {
         "key": "noHtmlPrepro",
