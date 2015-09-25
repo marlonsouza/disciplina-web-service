@@ -5,35 +5,24 @@
     .module('app')
     .controller('MainController', MainController);
 
-  /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  MainController.$inject = ['$q', 'promiseTracker', 'ClienteService'];
+
+  function MainController($q, promiseTracker, ClienteService) {
     var vm = this;
 
-    vm.awesomeThings = [];
-    vm.classAnimation = '';
-    vm.creationDate = 1443145332343;
-    vm.showToastr = showToastr;
+    vm.tracker = {};
+    vm.tracker.loading = promiseTracker();
 
-    activate();
+    init();
 
-    function activate() {
-      getWebDevTec();
-      $timeout(function() {
-        vm.classAnimation = 'rubberBand';
-      }, 4000);
-    }
-
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
-    }
-
-    function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
-
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        awesomeThing.rank = Math.random();
-      });
+    function init(){
+      vm.tracker.loading.addPromise(
+        $q.all([
+          ClienteService.getDefault().then(function(data){
+            vm.defaultClienteCache = data;
+          })
+        ])
+      );
     }
   }
 })();

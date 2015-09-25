@@ -89,4 +89,12 @@ public class ApiResource {
         return Response.ok(Mensageiro.clientes).build();
     }
 
+    @OPTIONS
+    @Path("cliente")
+    public Response getDefaultCliente(){
+        return Response.ok(ClienteDto.Builder.create().build()).build();
+    }
+
+
+
 }

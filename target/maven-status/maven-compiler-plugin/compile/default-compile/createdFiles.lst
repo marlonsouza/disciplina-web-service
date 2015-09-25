@@ -4,6 +4,7 @@ api/common/BaseApplication.class
 api/cliente/Cliente$1.class
 api/cliente/ClienteDto$ClienteRepresentationBuilder.class
 api/common/RepresentationBuilder.class
+api/common/FilterApplication.class
 api/cliente/Cliente.class
 api/cliente/ClienteDto$Builder.class
 api/mensageiro/Mensageiro.class

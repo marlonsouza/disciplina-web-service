@@ -12,11 +12,9 @@ import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.core.Application;
 
 @ApplicationPath("/")
-public class BaseApplication extends Application implements ContainerResponseFilter{
+public class BaseApplication extends Application{
 
 	private Set<Class<?>> classes = new HashSet<>();
-
-
 
 	public BaseApplication(){
 		classes.add(ApiResource.class);
@@ -27,10 +25,4 @@ public class BaseApplication extends Application implements ContainerResponseFil
 		return classes;
 	}
 
-	@Override
-	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext) throws IOException {
-		responseContext.getHeaders().add("Access-Control-Allow-Origin", "*");
-		responseContext.getHeaders().add("Access-Control-Allow-Credentials", "true");
-		responseContext.getHeaders().add("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT, OPTIONS");
-	}
 }
