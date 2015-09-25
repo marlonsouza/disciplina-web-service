@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jaxrs-api-3.0.10.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/target/revelar/WEB-INF/lib/jaxrs-api-3.0.10.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,13 @@
+api/mensageiro/MensagemDto$MensagemRepresentationBuilder.class
+api/mensageiro/MensagemDto.class
+api/common/BaseApplication.class
+api/cliente/Cliente$1.class
+api/cliente/ClienteDto$ClienteRepresentationBuilder.class
+api/common/RepresentationBuilder.class
+api/cliente/Cliente.class
+api/cliente/ClienteDto$Builder.class
+api/mensageiro/Mensageiro.class
+api/mensageiro/MensagemDto$Builder.class
+api/common/ApiResource.class
+api/mensageiro/Mensagem.class
+api/cliente/ClienteDto.class
