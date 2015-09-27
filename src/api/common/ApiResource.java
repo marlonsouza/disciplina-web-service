@@ -8,6 +8,7 @@ import api.mensageiro.MensagemDto;
 import com.google.common.collect.Collections2;
 
 import javax.inject.Inject;
+import javax.json.Json;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -69,7 +70,7 @@ public class ApiResource {
     public Response removeCliente(@PathParam("id") Integer id) {
         Mensageiro.deleteCliente(id);
 
-        return Response.accepted().build();
+        return Response.ok().build();
     }
 
     @POST
@@ -94,7 +95,4 @@ public class ApiResource {
     public Response getDefaultCliente(){
         return Response.ok(ClienteDto.Builder.create().build()).build();
     }
-
-
-
 }

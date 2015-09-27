@@ -2,7 +2,7 @@
 
   <hr>
 
-  <form name="vm.form">
+  <form name="vm.formCliente">
     <div class="row">
       <div class="col-md-4">
         <label>Cliente</label>
@@ -12,7 +12,7 @@
     <hr>
     <div class="row">
       <div class="col-md-4">
-        <button class="btn btn-success">Add Cliente</button>
+        <button class="btn btn-success" ng-click="vm.saveCliente()">Salvar Cliente</button>
       </div>
     </div>
   </form>
@@ -28,7 +28,10 @@
 
       <ul class="list-group">
         <li class="list-group-item text-warning" ng-if="!vm.clientes || vm.clientes.length===0">Não há clientes cadastrados</li>
-        <li class="list-group-item" ng-repeat="cliente in vm.clientes track by $index">{{cliente.nome}}</li>
+        <li class="list-group-item" ng-repeat="cliente in vm.clientes track by $index">
+          {{cliente.nome}}
+          <a href="" ng-click="vm.removeCliente(cliente.id)"><span class="glyphicon glyphicon-trash pull-right" tooltip="Remove Cliente"></span></a>
+        </li>
       </ul>
     </div>
   </div>

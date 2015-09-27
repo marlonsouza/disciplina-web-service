@@ -1,15 +1,9 @@
 package api.common;
 
-import java.io.IOException;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
-
 import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.container.ContainerRequestContext;
-import javax.ws.rs.container.ContainerResponseContext;
-import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.core.Application;
+import java.util.HashSet;
+import java.util.Set;
 
 @ApplicationPath("/")
 public class BaseApplication extends Application{
@@ -18,6 +12,7 @@ public class BaseApplication extends Application{
 
 	public BaseApplication(){
 		classes.add(ApiResource.class);
+		classes.add(FilterApplication.class);
 	}
 
 	@Override

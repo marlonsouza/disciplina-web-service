@@ -3,7 +3,9 @@
 /home/marlon/projetos/webservice/src/api/mensageiro/MensagemDto.java
 /home/marlon/projetos/webservice/src/api/cliente/ClienteDto.java
 /home/marlon/projetos/webservice/src/api/mensageiro/Mensagem.java
+/home/marlon/projetos/webservice/src/api/common/FilterResponseApplication.java
 /home/marlon/projetos/webservice/src/api/cliente/Cliente.java
 /home/marlon/projetos/webservice/src/api/common/RepresentationBuilder.java
+/home/marlon/projetos/webservice/src/api/common/FilterRequestApplication.java
 /home/marlon/projetos/webservice/src/api/mensageiro/Mensageiro.java
 /home/marlon/projetos/webservice/src/api/common/FilterApplication.java

@@ -1,15 +1,14 @@
 package api.cliente;
 
 import api.common.RepresentationBuilder;
-import api.mensageiro.Mensagem;
 import api.mensageiro.MensagemDto;
 import com.google.common.base.Optional;
 import com.google.common.collect.Collections2;
 
 import javax.inject.Inject;
-import javax.ws.rs.Produces;
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by root on 20/09/15.
@@ -18,7 +17,7 @@ public class ClienteDto {
 
     private Integer id;
     private String nome;
-    private List<MensagemDto> mensagens = Collections.emptyList();
+    private List<MensagemDto> mensagens = new ArrayList<>();
 
     private void setId(Integer id) {
         this.id = id;
@@ -45,7 +44,6 @@ public class ClienteDto {
         return mensagens;
     }
 
-    @Produces
     public static final class ClienteRepresentationBuilder implements RepresentationBuilder<Cliente, ClienteDto> {
 
         @Inject
@@ -54,13 +52,15 @@ public class ClienteDto {
         @Override
         public Cliente fromRepresentation(ClienteDto dtoRepresentation) {
             return new Cliente(dtoRepresentation.getId(), dtoRepresentation.getNome(),
-                    (List<Mensagem>)
-                            Optional.fromNullable(dtoRepresentation.getMensagens())
-                                    .transform(list ->
-                                            Collections2.transform(
-                                                    list, m -> mensagemRepresentation.fromRepresentation(m)
-                                            ))
+                    Optional.fromNullable(dtoRepresentation.getMensagens())
+                            .transform(list ->
+                                    Collections2.transform(
+                                            list,
+                                            m -> mensagemRepresentation.fromRepresentation(m)
+                                    ).stream().collect(Collectors.toList()))
+                            .orNull()
             );
+
         }
 
         @Override
@@ -68,11 +68,13 @@ public class ClienteDto {
             return Builder.create()
                     .id(modelRepresentation.getId())
                     .nome(modelRepresentation.getNome())
-                    .mensagens((List<MensagemDto>) Optional.fromNullable(modelRepresentation.getMensagens())
-                                    .transform(list -> Collections2.transform(
-                                                    list,
-                                                    m -> mensagemRepresentation.toRepresentation(m)
-                                            )
+                    .mensagens(Optional.fromNullable(modelRepresentation.getMensagens())
+                                    .transform(list ->
+                                                    Collections2.transform(
+                                                            list,
+                                                            m -> mensagemRepresentation.toRepresentation(m)
+                                                    )
+                                                            .stream().collect(Collectors.toList())
                                     ).orNull()
                     )
                     .build();

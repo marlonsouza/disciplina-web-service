@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class Mensageiro {
 
-    public static final List<Cliente> clientes = Collections.emptyList();
+    public static final List<Cliente> clientes = new ArrayList<>();
 
     public void gravaMensagem(Cliente cliente, Mensagem mensagem){
         if(mensagem == null || cliente == null){
@@ -21,13 +21,15 @@ public class Mensageiro {
     }
 
     public static void deleteCliente(Integer id){
-        Optional.ofNullable(id)
-                .ifPresent(c -> clientes.removeIf(cli -> cli.getId() == id));
+        if(id!=null){
+            clientes.removeIf(cli -> cli.getId()==id);
+        }
     }
 
     public static void gravaCliente(Cliente cliente){
-        Optional.ofNullable(cliente)
-                .ifPresent(c-> clientes.add(c));
+        if(cliente!=null){
+            clientes.add(cliente);
+        }
     }
 
     public static Cliente getCliente(Integer id){

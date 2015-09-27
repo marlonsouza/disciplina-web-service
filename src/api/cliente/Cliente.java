@@ -2,6 +2,7 @@ package api.cliente;
 
 import api.mensageiro.Mensagem;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
@@ -15,7 +16,7 @@ public class Cliente {
 
     private Integer id;
     private String nome;
-    private List<Mensagem> mensagens = Collections.emptyList();
+    private List<Mensagem> mensagens = new ArrayList<>();
 
     public Cliente(Integer id,String nome, List<Mensagem> mensagens) {
         if(id==null){
@@ -23,6 +24,7 @@ public class Cliente {
         }
 
         this.id = id;
+        this.nome = nome;
         this.mensagens.clear();
         this.mensagens.addAll(mensagens);
     }

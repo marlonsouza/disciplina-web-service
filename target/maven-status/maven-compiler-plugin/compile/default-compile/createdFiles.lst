@@ -7,7 +7,9 @@ api/common/RepresentationBuilder.class
 api/common/FilterApplication.class
 api/cliente/Cliente.class
 api/cliente/ClienteDto$Builder.class
+api/common/FilterResponseApplication.class
 api/mensageiro/Mensageiro.class
+api/common/FilterRequestApplication.class
 api/mensageiro/MensagemDto$Builder.class
 api/common/ApiResource.class
 api/mensageiro/Mensagem.class

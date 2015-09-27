@@ -39,8 +39,6 @@
 
         Restangular.setDefaultHeaders({
             'Content-Type':'application/json',
-            'Access-Control-Allow-Origin':'*',
-            'Access-Control-Request-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
             'Accept': 'application/json'
         });
 
