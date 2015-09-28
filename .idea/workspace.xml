@@ -1,168 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84524fad-4250-42bd-a5e1-4461b67cc1bb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/cliente/Cliente.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/cliente/ClienteDto$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/cliente/ClienteDto$ClienteRepresentationBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/cliente/ClienteDto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/common/ApiResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/common/BaseApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/common/RepresentationBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/mensageiro/Mensageiro.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/mensageiro/Mensagem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/mensageiro/MensagemDto$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/mensageiro/MensagemDto$MensagemRepresentationBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/mensageiro/MensagemDto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/beans.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/cliente/Cliente.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/cliente/ClienteDto$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/cliente/ClienteDto$ClienteRepresentationBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/cliente/ClienteDto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/common/ApiResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/common/BaseApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/common/RepresentationBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/mensageiro/Mensageiro.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/mensageiro/Mensagem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/mensageiro/MensagemDto$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/mensageiro/MensagemDto$MensagemRepresentationBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/classes/api/mensageiro/MensagemDto.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/activation-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/commons-codec-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/commons-httpclient-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/commons-io-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/commons-logging-1.0.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/guava-18.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/httpclient-4.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/httpcore-4.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/javassist-3.12.1.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/javax.json-api-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/jcip-annotations-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/jsr250-api-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/resteasy-cdi-2.3.5.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/resteasy-jaxrs-2.3.5.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/scannotation-1.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/lib/weld-servlet-1.1.10.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webservicesenai/WEB-INF/web.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/assets/images/angular.png" afterPath="$PROJECT_DIR$/app/src/assets/images/angular.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/assets/images/bootstrap.png" afterPath="$PROJECT_DIR$/app/src/assets/images/bootstrap.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/assets/images/browsersync.png" afterPath="$PROJECT_DIR$/app/src/assets/images/browsersync.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/favicon.ico" afterPath="$PROJECT_DIR$/app/src/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/assets/images/gulp.png" afterPath="$PROJECT_DIR$/app/src/assets/images/gulp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/assets/images/jasmine.png" afterPath="$PROJECT_DIR$/app/src/assets/images/jasmine.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/assets/images/karma.png" afterPath="$PROJECT_DIR$/app/src/assets/images/karma.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/assets/images/node-sass.png" afterPath="$PROJECT_DIR$/app/src/assets/images/node-sass.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/assets/images/protractor.png" afterPath="$PROJECT_DIR$/app/src/assets/images/protractor.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/assets/images/ui-bootstrap.png" afterPath="$PROJECT_DIR$/app/src/assets/images/ui-bootstrap.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/assets/images/yeoman.png" afterPath="$PROJECT_DIR$/app/src/assets/images/yeoman.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.bowerrc" afterPath="$PROJECT_DIR$/app/.bowerrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.editorconfig" afterPath="$PROJECT_DIR$/app/.editorconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.eslintrc" afterPath="$PROJECT_DIR$/app/.eslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/e2e/.eslintrc" afterPath="$PROJECT_DIR$/app/e2e/.eslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulp/.eslintrc" afterPath="$PROJECT_DIR$/app/gulp/.eslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="$PROJECT_DIR$/app/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/.jsdtscope" afterPath="$PROJECT_DIR$/.settings/.jsdtscope" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.yo-rc.json" afterPath="$PROJECT_DIR$/app/.yo-rc.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/cliente/Cliente.java" afterPath="$PROJECT_DIR$/src/api/cliente/Cliente.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/cliente/ClienteDto.java" afterPath="$PROJECT_DIR$/src/api/cliente/ClienteDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/common/FilterApplication.java" afterPath="$PROJECT_DIR$/src/api/common/FilterApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/common/FilterRequestApplication.java" afterPath="$PROJECT_DIR$/src/api/common/FilterRequestApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/common/FilterResponseApplication.java" afterPath="$PROJECT_DIR$/src/api/common/FilterResponseApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_12_1_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_12_1_GA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_json_javax_json_api_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_json_javax_json_api_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_jaxrs_api_3_0_10_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_jaxrs_api_3_0_10_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_cdi_2_3_5_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_cdi_2_3_5_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_jaxrs_2_3_5_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_jaxrs_2_3_5_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_weld_servlet_weld_servlet_1_1_10_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_weld_servlet_weld_servlet_1_1_10_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scannotation_scannotation_1_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scannotation_scannotation_1_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/mensageiro/Mensageiro.java" afterPath="$PROJECT_DIR$/src/api/mensageiro/Mensageiro.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/mensageiro/Mensagem.java" afterPath="$PROJECT_DIR$/src/api/mensageiro/Mensagem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/mensageiro/MensagemDto.java" afterPath="$PROJECT_DIR$/src/api/mensageiro/MensagemDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/common/RepresentationBuilder.java" afterPath="$PROJECT_DIR$/src/api/common/RepresentationBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/beans.xml" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/beans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower.json" afterPath="$PROJECT_DIR$/app/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulp/build.js" afterPath="$PROJECT_DIR$/app/gulp/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulp/conf.js" afterPath="$PROJECT_DIR$/app/gulp/conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulp/e2e-tests.js" afterPath="$PROJECT_DIR$/app/gulp/e2e-tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/githubContributor/githubContributor.service.js" afterPath="$PROJECT_DIR$/app/src/app/components/githubContributor/githubContributor.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/githubContributor/githubContributor.service.spec.js" afterPath="$PROJECT_DIR$/app/src/app/components/githubContributor/githubContributor.service.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulpfile.js" afterPath="$PROJECT_DIR$/app/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.config.js" afterPath="$PROJECT_DIR$/app/src/app/index.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.constants.js" afterPath="$PROJECT_DIR$/app/src/app/index.constants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/index.html" afterPath="$PROJECT_DIR$/app/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.module.js" afterPath="$PROJECT_DIR$/app/src/app/index.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.route.js" afterPath="$PROJECT_DIR$/app/src/app/index.route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.run.js" afterPath="$PROJECT_DIR$/app/src/app/index.run.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/index.scss" afterPath="$PROJECT_DIR$/app/src/app/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulp/inject.js" afterPath="$PROJECT_DIR$/app/gulp/inject.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jaxrs_api_3_0_10_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jaxrs_api_3_0_10_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/karma.conf.js" afterPath="$PROJECT_DIR$/app/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/main/main.controller.js" afterPath="$PROJECT_DIR$/app/src/app/main/main.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/main/main.controller.spec.js" afterPath="$PROJECT_DIR$/app/src/app/main/main.controller.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/main/main.html" afterPath="$PROJECT_DIR$/app/src/app/main/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/e2e/main.po.js" afterPath="$PROJECT_DIR$/app/e2e/main.po.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/e2e/main.spec.js" afterPath="$PROJECT_DIR$/app/e2e/main.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/malarkey/malarkey.directive.js" afterPath="$PROJECT_DIR$/app/src/app/components/malarkey/malarkey.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/malarkey/malarkey.directive.spec.js" afterPath="$PROJECT_DIR$/app/src/app/components/malarkey/malarkey.directive.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/malarkey/malarkey.scss" afterPath="$PROJECT_DIR$/app/src/app/components/malarkey/malarkey.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/navbar/navbar.directive.js" afterPath="$PROJECT_DIR$/app/src/app/components/navbar/navbar.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/navbar/navbar.directive.spec.js" afterPath="$PROJECT_DIR$/app/src/app/components/navbar/navbar.directive.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/navbar/navbar.html" afterPath="$PROJECT_DIR$/app/src/app/components/navbar/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/navbar/navbar.scss" afterPath="$PROJECT_DIR$/app/src/app/components/navbar/navbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.jboss.ide.eclipse.as.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.jboss.ide.eclipse.as.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/package.json" afterPath="$PROJECT_DIR$/app/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/protractor.conf.js" afterPath="$PROJECT_DIR$/app/protractor.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulp/scripts.js" afterPath="$PROJECT_DIR$/app/gulp/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulp/server.js" afterPath="$PROJECT_DIR$/app/gulp/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulp/styles.js" afterPath="$PROJECT_DIR$/app/gulp/styles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulp/unit-tests.js" afterPath="$PROJECT_DIR$/app/gulp/unit-tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gulp/watch.js" afterPath="$PROJECT_DIR$/app/gulp/watch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/webDevTec/webDevTec.service.js" afterPath="$PROJECT_DIR$/app/src/app/components/webDevTec/webDevTec.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/app/components/webDevTec/webDevTec.service.spec.js" afterPath="$PROJECT_DIR$/app/src/app/components/webDevTec/webDevTec.service.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/webservice_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webservice_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/webservice_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webservice_war_exploded.xml" />
+    <list default="true" id="84524fad-4250-42bd-a5e1-4461b67cc1bb" name="Default" comment="final">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/app/main/cliente/cliente.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/app/index.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webservice.iws" />
@@ -478,7 +319,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -497,10 +339,125 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cliente" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -994,7 +951,7 @@
       <workItem from="1443364091352" duration="20432000" />
       <workItem from="1443391230783" duration="9342000" />
       <workItem from="1443404376973" duration="3191000" />
-      <workItem from="1443410254349" duration="89000" />
+      <workItem from="1443410254349" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="Server funfando com os headers certinho.&#10;&#10;Santo CORSFilter. Amém">
       <created>1443214561037</created>
@@ -1018,7 +975,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141187000" />
+    <option name="totallyTimeSpent" value="141342000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1035,13 +992,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.330781" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34762633" sideWeight="0.5058916" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4058193" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40458015" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299293" sideWeight="0.48969072" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1055,11 +1014,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29862174" sideWeight="0.4941084" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35528332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1295,6 +1252,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1443,6 +1401,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
