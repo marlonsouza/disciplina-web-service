@@ -1,9 +1,9 @@
 package api.mensageiro;
 
-import api.cliente.Cliente;
+import api.cliente.ClienteDto;
 import api.common.RepresentationBuilder;
 
-import javax.ws.rs.Produces;
+import java.time.LocalDateTime;
 
 /**
  * Created by root on 20/09/15.
@@ -12,7 +12,8 @@ public class MensagemDto {
 
     private Integer id;
     private String mensagem;
-    private Cliente cliente;
+    private ClienteDto cliente;
+    private LocalDateTime horario;
 
     private void setId(Integer id) {
         this.id = id;
@@ -22,7 +23,7 @@ public class MensagemDto {
         this.mensagem = mensagem;
     }
 
-    private void setCliente(Cliente cliente) {
+    private void setCliente(ClienteDto cliente) {
         this.cliente = cliente;
     }
 
@@ -34,16 +35,27 @@ public class MensagemDto {
         return mensagem;
     }
 
-    public Cliente getCliente() {
+    public ClienteDto getCliente() {
         return cliente;
     }
 
-    @Produces
+    public LocalDateTime getHorario() {
+        return horario;
+    }
+
+    public void setHorario(LocalDateTime horario) {
+        this.horario = horario;
+    }
+
     public static final class MensagemRepresentationBuilder implements RepresentationBuilder<Mensagem, MensagemDto>{
+
+        private ClienteDto.ClienteRepresentationBuilder clienteRepresentationBuilder = new ClienteDto.ClienteRepresentationBuilder();
 
         @Override
         public Mensagem fromRepresentation(MensagemDto dtoRepresentation) {
-            return new Mensagem(dtoRepresentation.getId(),dtoRepresentation.getMensagem(), dtoRepresentation.getCliente());
+            return new Mensagem(dtoRepresentation.getId(),dtoRepresentation.getMensagem(),
+
+                    clienteRepresentationBuilder.fromRepresentation(dtoRepresentation.getCliente()));
         }
 
         @Override
@@ -51,7 +63,8 @@ public class MensagemDto {
             return MensagemDto.Builder.create()
                     .id(modelRepresentation.getId())
                     .mensagem(modelRepresentation.getMensagem())
-                    .cliente(modelRepresentation.getCliente())
+                    .cliente(clienteRepresentationBuilder.toRepresentation(modelRepresentation.getCliente()))
+                    .horario(modelRepresentation.getHorario())
                     .build();
         }
     }
@@ -81,8 +94,13 @@ public class MensagemDto {
             return this;
         }
 
-        public Builder cliente(Cliente cliente){
+        public Builder cliente(ClienteDto cliente){
             entity.setCliente(cliente);
+            return this;
+        }
+
+        public Builder horario(LocalDateTime horario){
+            entity.setHorario(horario);
             return this;
         }
 

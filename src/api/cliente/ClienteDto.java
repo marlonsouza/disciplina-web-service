@@ -17,7 +17,6 @@ public class ClienteDto {
 
     private Integer id;
     private String nome;
-    private List<MensagemDto> mensagens = new ArrayList<>();
 
     private void setId(Integer id) {
         this.id = id;
@@ -25,11 +24,6 @@ public class ClienteDto {
 
     private void setNome(String nome) {
         this.nome = nome;
-    }
-
-    private void setMensagens(List<MensagemDto> mensagens) {
-        this.mensagens.clear();
-        this.mensagens.addAll(mensagens);
     }
 
     public Integer getId() {
@@ -40,27 +34,11 @@ public class ClienteDto {
         return nome;
     }
 
-    public List<MensagemDto> getMensagens() {
-        return mensagens;
-    }
-
     public static final class ClienteRepresentationBuilder implements RepresentationBuilder<Cliente, ClienteDto> {
-
-        @Inject
-        private MensagemDto.MensagemRepresentationBuilder mensagemRepresentation;
 
         @Override
         public Cliente fromRepresentation(ClienteDto dtoRepresentation) {
-            return new Cliente(dtoRepresentation.getId(), dtoRepresentation.getNome(),
-                    Optional.fromNullable(dtoRepresentation.getMensagens())
-                            .transform(list ->
-                                    Collections2.transform(
-                                            list,
-                                            m -> mensagemRepresentation.fromRepresentation(m)
-                                    ).stream().collect(Collectors.toList()))
-                            .orNull()
-            );
-
+            return new Cliente(dtoRepresentation.getId(), dtoRepresentation.getNome());
         }
 
         @Override
@@ -68,15 +46,6 @@ public class ClienteDto {
             return Builder.create()
                     .id(modelRepresentation.getId())
                     .nome(modelRepresentation.getNome())
-                    .mensagens(Optional.fromNullable(modelRepresentation.getMensagens())
-                                    .transform(list ->
-                                                    Collections2.transform(
-                                                            list,
-                                                            m -> mensagemRepresentation.toRepresentation(m)
-                                                    )
-                                                            .stream().collect(Collectors.toList())
-                                    ).orNull()
-                    )
                     .build();
         }
     }
@@ -100,11 +69,6 @@ public class ClienteDto {
 
         public Builder id(Integer id) {
             entity.setId(id);
-            return this;
-        }
-
-        public Builder mensagens(List<MensagemDto> mensagens) {
-            entity.setMensagens(mensagens);
             return this;
         }
 

@@ -28,7 +28,7 @@
 
         Restangular.addResponseInterceptor(function(data, operation){
             var extractedData;
-            if(operation == 'getList') {
+            if(operation === 'getList') {
                 extractedData = data.items;
             } else {
                 extractedData = data;

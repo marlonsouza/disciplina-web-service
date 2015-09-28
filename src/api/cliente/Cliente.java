@@ -16,24 +16,22 @@ public class Cliente {
 
     private Integer id;
     private String nome;
-    private List<Mensagem> mensagens = new ArrayList<>();
 
-    public Cliente(Integer id,String nome, List<Mensagem> mensagens) {
+    public Cliente(Integer id,String nome) {
         if(id==null){
             id = ++maxId;
         }
 
         this.id = id;
         this.nome = nome;
-        this.mensagens.clear();
-        this.mensagens.addAll(mensagens);
     }
 
-    public List<Mensagem> getMensagens() {
-        return mensagens;
+    public Cliente(String nome){
+        this.id = ++maxId;
+        this.nome = nome;
     }
 
-    public Integer getId() {
+     public Integer getId() {
         return id;
     }
 
@@ -49,19 +47,4 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public void gravaMensagem(Mensagem mensagem){
-
-        Consumer<Mensagem> action = new Consumer<Mensagem>() {
-            @Override
-            public void accept(Mensagem mensagem) {
-                mensagens.removeIf(m -> m.getId() == mensagem.getId());
-                mensagens.add(mensagem);
-            }
-        };
-
-        Optional.ofNullable(mensagem)
-                .ifPresent(action);
-
-
-    }
 }

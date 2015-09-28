@@ -1,36 +1,105 @@
 <div class="container">
 
-  <hr>
-
-  <form name="vm.formCliente">
-    <div class="row">
-      <div class="col-md-4">
-        <label>Cliente</label>
-        <input type="text" class="form-control" ng-model="vm.cliente.nome"/>
-      </div>
-    </div>
+  <div ng-if="!vm.enabledSimular">
     <hr>
-    <div class="row">
-      <div class="col-md-4">
-        <button class="btn btn-success" ng-click="vm.saveCliente()">Salvar Cliente</button>
+
+    <form name="vm.formCliente">
+      <div class="row">
+        <div class="col-md-4">
+          <label>Cliente</label>
+          <input type="text" class="form-control" ng-model="vm.cliente.nome"/>
+        </div>
       </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <button class="btn btn-success" ng-click="vm.saveCliente(vm.cliente)">Salvar Cliente</button>
+        </div>
+      </div>
+    </form>
+
+    <hr>
+
+    <form name="vm.formMessage">
+      <div class="row">
+        <div class="col-md-4">
+          <label>Cliente: </label>
+          <select class="form-control" ng-model="vm.mensagem.cliente">
+            <option ng-repeat="cliente in vm.clientes track by $index" value="{{cliente.id}}">{{cliente.nome}}</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label>Mensagem: </label>
+          <input class="form-control" type="text" ng-model="vm.mensagem.mensagem">
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <button class="btn btn-success" ng-click="vm.addMessage(vm.mensagem)">Salvar Mensagem</button>
+        </div>
+      </div>
+    </form>
+    <hr>
+  </div>
+
+  <div class="row" ng-if="!vm.enabledSimular">
+    <div class="col-md-4">
+      <button class="btn btn-danger" ng-click="vm.enabledSimular = true">Simular</button>
     </div>
-  </form>
+  </div>
+
+  <hr>
+  <div class="row" ng-if="vm.enabledSimular">
+    <form name="vm.formSimular" ng-init="vm.numeroClientes=1">
+      <div class="row">
+        <div class="col-md-2">
+          <label>Número de clientes: </label>
+          <input type="number" class="form-control" ng-model="vm.numeroClientes">
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <button class="btn btn-success" ng-click="vm.simular(vm.numeroClientes)">Iniciar</button>
+        </div>
+      </div>
+    </form>
+  </div>
 
   <div class="row">
     <br/>
 
     <div class="panel panel-default">
       <div class="panel-heading">
-          Clientes
+        Clientes
         <a href=""><span class="glyphicon glyphicon-repeat" tooltip="Buscar lista no server"></span></a>
       </div>
 
       <ul class="list-group">
-        <li class="list-group-item text-warning" ng-if="!vm.clientes || vm.clientes.length===0">Não há clientes cadastrados</li>
+        <li class="list-group-item text-warning" ng-if="!vm.clientes || vm.clientes.length===0">Não há clientes
+          cadastrados
+        </li>
         <li class="list-group-item" ng-repeat="cliente in vm.clientes track by $index">
           {{cliente.nome}}
-          <a href="" ng-click="vm.removeCliente(cliente.id)"><span class="glyphicon glyphicon-trash pull-right" tooltip="Remove Cliente"></span></a>
+          <a href="" ng-click="vm.removeCliente(cliente.id)"><span class="glyphicon glyphicon-trash pull-right"
+                                                                   tooltip="Remove Cliente"></span></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Mensagens
+        <a href=""><span class="glyphicon glyphicon-repeat" tooltip="Buscar lista no server"></span></a>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item text-warning" ng-if="!vm.mensagens || vm.mensagens.length===0">Não há mensagens
+          cadastrados
+        </li>
+        <li class="list-group-item" ng-repeat="mensagem in vm.mensagens track by $index">
+          {{mensagem.cliente.nome+': '+mensagem.mensagem}}
         </li>
       </ul>
     </div>
